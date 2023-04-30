@@ -8,19 +8,15 @@ import friends from './data/friends.json';
 import TransactionHistory from '../components/Transaction/TransactionHistory';
 import transactions from './data/transactions.json';
 
-const App = () => (
-  <>
-    <Profile
-      name={user.username}
-      tag={user.tag}
-      location={user.location}
-      avatar={user.avatar}
-      stats={user.stats}
-    />
-    <Statistics title="Upload stats" stats={statisticalData} />
-    <FriendList friends={friends} />
-    <TransactionHistory items={transactions} />
-  </>
-);
+function App() {
+  return (
+    <>
+      <Profile {...user} />
+      <Statistics label="Upload Stats" stats={statisticalData} />
+      <FriendList friends={friends} />
+      <TransactionHistory transactions={transactions} />
+    </>
+  );
+}
 
 export default App;

@@ -2,6 +2,9 @@
   box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3), -1px -1px 2px rgb(0, 0, 0, 0.3);
   border-collapse: collapse;
   margin: 20px 0;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
   color: grey;
 }
 .transactionHistory > thead > tr {
